@@ -1,0 +1,14 @@
+name = "guardtrack-v2"
+compatibility_date = "2024-03-29"
+
+[vars]
+# You must set your actual ADMIN_SECRET in the Cloudflare Dashboard 
+# or via: npx wrangler pages secret put ADMIN_SECRET
+ADMIN_SECRET = "admin123"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "guardtrack_db"
+# Put your specific D1 database ID below after creating it via:
+# npx wrangler d1 create guardtrack_db
+database_id = "YOUR_D1_DATABASE_ID_HERE"
